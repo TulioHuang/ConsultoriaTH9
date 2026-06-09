@@ -69,14 +69,14 @@ body{background:${B};color:${W};font-family:'Montserrat',sans-serif;min-height:1
 /* SIDEBAR — desktop */
 .sidebar{width:220px;background:${D};border-right:1px solid ${G}18;display:flex;flex-direction:column;position:fixed;top:0;left:0;height:100vh;z-index:100;transition:transform .3s}
 .sb-logo{padding:22px 18px 18px;border-bottom:1px solid ${G}15}
-.sb-lbox{width:36px;height:36px;background:${G};border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;color:${B};margin-bottom:10px}
-.sb-ltxt{font-size:12px;font-weight:800;letter-spacing:2px;color:${W};text-transform:uppercase}
-.sb-lsub{font-size:9px;color:${G};font-weight:600;letter-spacing:1px;margin-top:1px}
+.sb-lbox{width:42px;height:42px;background:${G};border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;color:${B};margin-bottom:10px}
+.sb-ltxt{font-size:15px;font-weight:800;letter-spacing:2px;color:${W};text-transform:uppercase}
+.sb-lsub{font-size:11px;color:${G};font-weight:600;letter-spacing:1px;margin-top:1px}
 .sb-nav{flex:1;padding:16px 10px;display:flex;flex-direction:column;gap:4px}
-.sb-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:9px;font-size:11px;font-weight:700;color:#555;cursor:pointer;transition:all .2s;border:none;background:none;font-family:'Montserrat',sans-serif;width:100%;text-align:left;letter-spacing:.3px}
+.sb-item{display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:9px;font-size:13px;font-weight:700;color:#555;cursor:pointer;transition:all .2s;border:none;background:none;font-family:'Montserrat',sans-serif;width:100%;text-align:left;letter-spacing:.3px}
 .sb-item:hover{background:${GR};color:#aaa}
 .sb-item.active{background:${G}18;color:${G};border:1px solid ${G}22}
-.sb-icon{font-size:15px;width:20px;text-align:center;flex-shrink:0}
+.sb-icon{font-size:17px;width:20px;text-align:center;flex-shrink:0}
 .sb-live{display:flex;align-items:center;gap:5px;padding:14px 18px;border-top:1px solid ${G}15;font-size:9px;color:#22c55e;font-weight:700;letter-spacing:.5px}
 .ldot{width:5px;height:5px;border-radius:50%;background:#22c55e;animation:pulse 1.5s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
@@ -84,8 +84,8 @@ body{background:${B};color:${W};font-family:'Montserrat',sans-serif;min-height:1
 /* MAIN */
 .main{flex:1;margin-left:220px;min-height:100vh;display:flex;flex-direction:column}
 .topbar{background:${D};border-bottom:1px solid ${G}15;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50}
-.topbar-title{font-size:15px;font-weight:800;color:${W}}
-.topbar-sub{font-size:10px;color:#444;font-weight:600;margin-top:1px}
+.topbar-title{font-size:20px;font-weight:800;color:${W}}
+.topbar-sub{font-size:12px;color:#444;font-weight:600;margin-top:1px}
 .page{padding:24px 28px 60px;flex:1}
 
 /* MOBILE HEADER */
@@ -111,16 +111,16 @@ body{background:${B};color:${W};font-family:'Montserrat',sans-serif;min-height:1
 .card{background:${D};border:1px solid ${GR};border-radius:12px;padding:16px;margin-bottom:10px;transition:border-color .2s}
 .card:hover{border-color:${G}33}
 .chd{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
-.cn{font-size:14px;font-weight:700;color:${W}}
-.cs{font-size:10px;color:#555;margin-top:2px;font-weight:500}
+.cn{font-size:16px;font-weight:700;color:${W}}
+.cs{font-size:12px;color:#555;margin-top:2px;font-weight:500}
 .div{height:1px;background:${GR};margin:8px 0}
 .inf{display:flex;align-items:flex-start;gap:7px;margin-top:6px}
-.il{font-size:9px;color:#444;font-weight:700;letter-spacing:.3px;text-transform:uppercase;min-width:70px;padding-top:1px}
-.iv{font-size:11px;color:${W};font-weight:500;flex:1}
+.il{font-size:11px;color:#444;font-weight:700;letter-spacing:.3px;text-transform:uppercase;min-width:70px;padding-top:1px}
+.iv{font-size:13px;color:${W};font-weight:500;flex:1}
 .iva{color:#ef4444}.ivw{color:#f97316}.ivg{color:#22c55e}
 
 /* BADGES */
-.badge{padding:3px 8px;border-radius:20px;font-size:8px;font-weight:700;letter-spacing:.3px;white-space:nowrap}
+.badge{padding:4px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.3px;white-space:nowrap}
 .bg{background:${G}22;color:${G};border:1px solid ${G}33}
 .bgreen{background:#22c55e22;color:#22c55e;border:1px solid #22c55e33}
 .bred{background:#ef444422;color:#ef4444;border:1px solid #ef444433}
@@ -143,11 +143,11 @@ body{background:${B};color:${W};font-family:'Montserrat',sans-serif;min-height:1
 /* HERO FIN */
 .hero-fin{background:linear-gradient(135deg,${GR},${D});border:1px solid ${G}33;border-radius:14px;padding:20px;margin-bottom:16px;position:relative;overflow:hidden}
 .hero-fin::before{content:'';position:absolute;top:-20px;right:-20px;width:120px;height:120px;border-radius:50%;background:${G}08;border:1px solid ${G}15}
-.hero-lbl{font-size:8px;font-weight:700;letter-spacing:2px;color:${G};text-transform:uppercase;margin-bottom:5px;opacity:.8}
-.hero-val{font-size:36px;font-weight:900;color:${W};line-height:1;margin-bottom:3px;letter-spacing:-1px}
-.hero-sub{font-size:10px;color:#555;font-weight:500;margin-bottom:14px}
+.hero-lbl{font-size:11px;font-weight:700;letter-spacing:2px;color:${G};text-transform:uppercase;margin-bottom:5px;opacity:.8}
+.hero-val{font-size:42px;font-weight:900;color:${W};line-height:1;margin-bottom:3px;letter-spacing:-1px}
+.hero-sub{font-size:12px;color:#555;font-weight:500;margin-bottom:14px}
 .hero-chips{display:flex;gap:7px;flex-wrap:wrap}
-.chip{padding:4px 11px;border-radius:20px;font-size:9px;font-weight:700}
+.chip{padding:5px 13px;border-radius:20px;font-size:11px;font-weight:700}
 .chip-g{background:#22c55e22;color:#22c55e;border:1px solid #22c55e33}
 .chip-gold{background:${G}22;color:${G};border:1px solid ${G}33}
 .chip-r{background:#ef444422;color:#ef4444;border:1px solid #ef444433}
@@ -156,8 +156,8 @@ body{background:${B};color:${W};font-family:'Montserrat',sans-serif;min-height:1
 /* META */
 .meta-card{background:${GR};border:1px solid ${LG};border-radius:12px;padding:14px;margin-bottom:14px}
 .meta-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}
-.meta-lbl{font-size:9px;font-weight:700;color:#555;letter-spacing:.3px;text-transform:uppercase}
-.meta-pct{font-size:18px;font-weight:900;color:${G}}
+.meta-lbl{font-size:11px;font-weight:700;color:#555;letter-spacing:.3px;text-transform:uppercase}
+.meta-pct{font-size:22px;font-weight:900;color:${G}}
 .prog-bg{height:7px;background:${LG};border-radius:4px;overflow:hidden}
 .prog-fill{height:100%;background:linear-gradient(90deg,${G},#e8c56a);border-radius:4px;transition:width .8s ease}
 .meta-vals{display:flex;justify-content:space-between;margin-top:5px}
@@ -167,14 +167,14 @@ body{background:${B};color:${W};font-family:'Montserrat',sans-serif;min-height:1
 
 /* KPI */
 .kpi{background:${GR};border:1px solid ${LG};border-radius:12px;padding:14px}
-.kpi-lbl{font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#444;margin-bottom:5px}
-.kpi-val{font-size:22px;font-weight:900;line-height:1;margin-bottom:2px}
-.kpi-sub{font-size:9px;font-weight:600;margin-top:2px}
+.kpi-lbl{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#444;margin-bottom:5px}
+.kpi-val{font-size:26px;font-weight:900;line-height:1;margin-bottom:2px}
+.kpi-sub{font-size:11px;font-weight:600;margin-top:2px}
 .kup{color:#22c55e}.kdown{color:#ef4444}.kgold{color:${G}}.kblue{color:#60a5fa}.korg{color:#f97316}
 
 /* CHART */
 .cc{background:${GR};border:1px solid ${LG};border-radius:12px;padding:16px;margin-bottom:14px}
-.cc-title{font-size:9px;font-weight:700;color:#555;letter-spacing:.4px;text-transform:uppercase;margin-bottom:14px}
+.cc-title{font-size:11px;font-weight:700;color:#555;letter-spacing:.4px;text-transform:uppercase;margin-bottom:14px}
 .tt-box{background:${D};border:1px solid ${G}44;border-radius:7px;padding:9px 11px}
 .tt-lbl{font-size:8px;color:${G};font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px}
 .tt-val{font-size:11px;color:${W};font-weight:700}
@@ -182,20 +182,20 @@ body{background:${B};color:${W};font-family:'Montserrat',sans-serif;min-height:1
 /* ALERTS */
 .alert-b{background:#ef444411;border:1px solid #ef444422;border-radius:9px;padding:10px 13px;margin-bottom:13px;display:flex;align-items:center;gap:8px}
 .ad{width:6px;height:6px;border-radius:50%;background:#ef4444;flex-shrink:0;animation:pulse 1.5s infinite}
-.at{font-size:11px;color:#ef4444;font-weight:600}
+.at{font-size:13px;color:#ef4444;font-weight:600}
 .warn-b{background:#f9731611;border:1px solid #f9731622;border-radius:9px;padding:10px 13px;margin-bottom:13px;display:flex;align-items:center;gap:8px}
 .wd{width:6px;height:6px;border-radius:50%;background:#f97316;flex-shrink:0}
-.wt{font-size:11px;color:#f97316;font-weight:600}
+.wt{font-size:13px;color:#f97316;font-weight:600}
 
 /* SEC */
-.sec{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:${G};margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.sec{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:${G};margin-bottom:12px;display:flex;align-items:center;gap:7px}
 .sec::after{content:'';flex:1;height:1px;background:${G}22}
 
 /* SGRID */
 .sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
 .sc{background:${GR};border:1px solid ${LG};border-radius:11px;padding:12px 8px;text-align:center}
-.sn{font-size:22px;font-weight:900;color:${G};line-height:1}
-.sl{font-size:8px;color:#444;font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-top:3px}
+.sn{font-size:28px;font-weight:900;color:${G};line-height:1}
+.sl{font-size:11px;color:#444;font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-top:3px}
 
 /* SEARCH */
 .srch{background:${GR};border:1px solid ${LG};border-radius:9px;padding:9px 13px;color:${W};font-family:'Montserrat',sans-serif;font-size:12px;width:100%;outline:none;margin-bottom:14px;transition:border-color .2s}
@@ -220,16 +220,16 @@ body{background:${B};color:${W};font-family:'Montserrat',sans-serif;min-height:1
 .ti.active{background:${G};color:${B}}
 .hist-item{background:${B};border:1px solid ${GR};border-radius:8px;padding:10px 12px;margin-bottom:7px;cursor:pointer;transition:border-color .2s}
 .hist-item:hover,.hist-item.active{border-color:${G}}
-.hi-date{font-size:8px;color:${G};font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-bottom:3px}
-.hi-prev{font-size:11px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hi-date{font-size:11px;color:${G};font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-bottom:3px}
+.hi-prev{font-size:13px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .hi-full{font-size:11px;color:#ccc;line-height:1.7;white-space:pre-wrap;margin-top:7px;padding-top:7px;border-top:1px solid ${GR}}
 .peso-item{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid ${GR}22}
-.peso-val{font-size:17px;font-weight:900;color:${G}}
-.peso-data{font-size:9px;color:#444;font-weight:600;margin-top:1px}
+.peso-val{font-size:20px;font-weight:900;color:${G}}
+.peso-data{font-size:11px;color:#444;font-weight:600;margin-top:1px}
 .ci-card{background:${B};border:1px solid ${GR};border-radius:8px;padding:12px;margin-bottom:8px}
 .ci-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
-.ci-date{font-size:9px;color:${G};font-weight:700}
-.ci-nota{font-size:11px;color:#bbb;line-height:1.6}
+.ci-date{font-size:11px;color:${G};font-weight:700}
+.ci-nota{font-size:13px;color:#bbb;line-height:1.6}
 .num-inp{display:flex;align-items:center;gap:7px}
 .num-inp button{width:30px;height:30px;border-radius:6px;background:${LG};border:1px solid #333;color:${W};font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Montserrat',sans-serif}
 .macro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:10px}
@@ -244,10 +244,10 @@ body{background:${B};color:${W};font-family:'Montserrat',sans-serif;min-height:1
 .proj-card{background:linear-gradient(135deg,${G}12,${G}06);border:1px solid ${G}22;border-radius:11px;padding:14px;margin-bottom:12px}
 .proj-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid ${G}12}
 .proj-row:last-child{border-bottom:none}
-.proj-lbl{font-size:10px;color:#777;font-weight:500}
-.proj-val{font-size:12px;font-weight:800}
+.proj-lbl{font-size:13px;color:#777;font-weight:500}
+.proj-val{font-size:15px;font-weight:800}
 .rec-item{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid ${LG}}
-.rec-item:last-child{border-bottom:none}
+.rec-item:last-child{border-bottom:none}.cobranca-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
 
 /* RESPONSIVE */
 @media(max-width:768px){
@@ -433,8 +433,8 @@ export default function TH9Sistema() {
     </div>
     {vencidos.length>0&&<><div className="alert-b"><div className="ad"/><div className="at">{vencidos.length} aluno{vencidos.length>1?"s":""} com mensalidade vencida</div></div>
     <div className="sec">Vencidos</div>
-    <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(280px,1fr))",gap:10}}>
-      {vencidos.map(a=>{const d=getDias(a.vencimento); return <div key={a.id} className="card" style={{borderColor:"#ef444422"}}>
+    <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(320px,1fr))",gap:12}}>
+      {vencidos.map(a=>{const d=getDias(a.vencimento); return <div key={a.id} className="card" style={{borderColor:"#ef444433"}}>
         <div className="chd"><div><div className="cn">{a.nome}</div><div className="cs">{a.plano?.split(" - ")[0]}</div></div><span className="badge bred">Vencido {Math.abs(d)}d</span></div>
         <div className="inf"><span className="il">Venceu</span><span className="iv iva">{fmtDateInput(a.vencimento)}</span></div>
         <div className="inf"><span className="il">Valor</span><span className="iv">{a.plano?.split(" - ")[1]}</span></div>
@@ -443,7 +443,7 @@ export default function TH9Sistema() {
     </div></>}
     {proxVenc.length>0&&<><div className="warn-b"><div className="wd"/><div className="wt">{proxVenc.length} vence{proxVenc.length>1?"m":""} em breve</div></div>
     <div className="sec">A Vencer</div>
-    <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(280px,1fr))",gap:10}}>
+    <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(320px,1fr))",gap:12}}>
       {proxVenc.map(a=>{const d=getDias(a.vencimento); return <div key={a.id} className="card" style={{borderColor:"#f9731622"}}>
         <div className="chd"><div><div className="cn">{a.nome}</div><div className="cs">{a.plano?.split(" - ")[0]}</div></div><span className="badge borg">{d===0?"Hoje!":d+"d"}</span></div>
         <div className="inf"><span className="il">Vence</span><span className="iv ivw">{fmtDateInput(a.vencimento)}</span></div>
