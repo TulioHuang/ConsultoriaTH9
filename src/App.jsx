@@ -293,6 +293,13 @@ export default function TH9Sistema() {
   const [dietaForm, setDietaForm] = useState({kcal:"",prot:"",carbo:"",gord:"",obs:"",refeicoes:""});
   const [novoHist, setNovoHist] = useState({peso:"",pesObs:"",ciNota:"",ciPeso:""});
   const [wpModal, setWpModal] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(()=>{ save(SK+"_al",alunos); },[alunos]);
   useEffect(()=>{ save(SK+"_hi",historico); },[historico]);
@@ -590,7 +597,7 @@ export default function TH9Sistema() {
       <style>{css}</style>
 
       {/* DESKTOP */}
-      <div className="layout">
+      {!isMobile && <div className="layout">
         <div className="sidebar">
           <div className="sb-logo">
             <div className="sb-lbox">TH9</div>
@@ -616,10 +623,10 @@ export default function TH9Sistema() {
           </div>
           <div className="page">{pages[nav]}</div>
         </div>
-      </div>
+      </div>}
 
       {/* MOBILE */}
-      <div className="mob-hdr">
+      {isMobile && <div className="mob-hdr">
         <div className="mob-hrow">
           <div className="mob-logo">
             <div className="mob-lbox">TH9</div>
@@ -630,9 +637,9 @@ export default function TH9Sistema() {
         <div className="mob-nav">
           {NAVS.map(n=><button key={n.id} className={`mob-tab ${nav===n.id?"active":""}`} onClick={()=>setNav(n.id)}>{n.icon} {n.l}</button>)}
         </div>
-      </div>
-      <div className="mob-content">{pages[nav]}</div>
-      {nav==="alunos"&&<button className="fab" onClick={()=>abrirCadastro()}>+</button>}
+      </div>}
+      {isMobile && <div className="mob-content">{pages[nav]}</div>}
+      {isMobile && nav==="alunos"&&<button className="fab" onClick={()=>abrirCadastro()}>+</button>}
 
       <Modais/>
     </>
